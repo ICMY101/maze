@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>迷宫游戏</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>迷宫游戏</h1>
+        <div id="controls">
+            <label for="size">迷宫尺寸 (宽x高): </label>
+            <input type="number" id="size" value="10" min="5" max="20">
+            <button onclick="generateMaze()">生成迷宫</button>
+            <br><br>
+            <button onclick="startGame('single')">单人模式</button>
+            <button onclick="startGame('ai')">AI表演</button>
+            <button onclick="startGame('vs')">对战AI</button>
+        </div>
+        <div id="maze-container"></div>
+        <div id="status"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
